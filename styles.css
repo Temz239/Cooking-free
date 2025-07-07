@@ -144,7 +144,7 @@ button {
 }
 
 
-/* Subscription Section */
+
 .subscribe-section {
   background: #e6f7fb;
   padding: 60px 20px;
@@ -186,18 +186,14 @@ button {
   width: 500px;
   max-width: 80%;
   outline: none;
-
 }
 
 .subscribe-form button {
   padding: 10px;
-  background: #000;
+  background-color: #000;
   color: #fff;
   border-radius: 30px;
-  background-color: aqua;
   position: relative;
-  
-  
 }
 
 .subscribe-images .left-img {
@@ -216,7 +212,7 @@ button {
  
 }
 
-/* Recipes */
+
 .recipes-section {
   padding: 60px 20px;
   text-align: center;
@@ -317,12 +313,18 @@ button {
 }
 
 .btn{
-  position:relative;
+  position: relative;
   right: 140px;
   top: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
+
+}
+
+.button:hover {
+  background-color: #333;
 }
 
 .navbar{
@@ -332,6 +334,7 @@ margin-bottom: 100px;
 margin-left: 10px;
 margin-right: 10px;
 }
+
 
 @media (max-width: 1024px) {
   .contact-container {
@@ -408,7 +411,78 @@ margin-right: 10px;
   .subscribe-section {
     flex-direction: column;
     padding: 30px 20px;
-    text-align: center;
+    text-align: center; 
+    border-radius: 30px;
+    gap: 29px;
+    position: relative;
+  }
+
+    
+
+   .subscribe-section h1 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .subscribe-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .subscribe-form input {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 14px;
+    
+  }
+
+    .subscribe-form button {
+      width: 100%;
+      max-width: 300px;
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    
+    
+  }
+
+  .btn {
+    top: 60%;
+    left: 50%;
+    right: 140px;
+    transform: translate(50%);
+    
+  }
+
+  .subscribe-images .left-img,
+  .subscribe-images .right-img {
+    max-width: 80px;
+    max-height: 80px;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .subscribe-images .left-img {
+    left: 10px;
+  
+  }
+
+  .subscribe-images .right-img {
+    right: 10px;
+    
   }
 
   .subscribe-form input {
@@ -420,10 +494,7 @@ margin-right: 10px;
     flex-direction: column;
   }
 
-  .btn {
-    position: static;
-    margin-top: 10px;
-  }
+  
 
   .footer {
     text-align: center;
@@ -441,3 +512,6 @@ margin-right: 10px;
     text-align: center;
   }
 }
+
+
+  
